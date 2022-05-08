@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--Хедер-->
+    <header class="header">
+      <div class="header-conteiner">
+        <a class="logo" href="#">Web<span class="logo__header">Studio</span></a>
+        <!-- Навигация -->
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link--current">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Контакты хедер-->
+        <ul class="site-contact">
+          <li class="site-contact__item">
+            <a href="mailto:info@devstudio.com" class="site-contact__link">
+              <svg class="site-contact__mail">
+                <use href="./images/symbol-defs.svg#envelope"></use>
+              </svg>
+
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="site-contact__item">
+            <a href="tel:+380961111111" class="site-contact__link">
+              <svg class="site-contact__pfon">
+                <use href="./images/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!--Секция герой-->
+      <section class="hero">
+        <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
+        <button type="button" class="hero__button" data-modal-open>
+          Заказать услугу
+        </button>
+      </section>
+      <!--Секция наши преимущества (картинка, надпись, абзац)-->
+      <section class="advantages-section">
+        <div class="advantages-container">
+          <h2 class="visually-hidden">Наши преимущества</h2>
+          <ul class="advantages-cotainer__list">
+            <li class="advantages-cotainer__item">
+              <div class="advantages-cotainer__image">
+                <svg class="advantages-cotainer__icon">
+                  <use href="./images/symbol-defs.svg#antenna"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-cotainer__title">Внимание к деталям</h3>
+              <p class="advantages-cotainer__text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="advantages-cotainer__item">
+              <div class="advantages-cotainer__image">
+                <svg class="advantages-cotainer__icon">
+                  <use href="./images/symbol-defs.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-cotainer__title">Пунктуальность</h3>
+              <p class="advantages-cotainer__text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="advantages-cotainer__item">
+              <div class="advantages-cotainer__image">
+                <svg class="advantages-cotainer__icon">
+                  <use href="./images/symbol-defs.svg#diagram"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-cotainer__title">Планирование</h3>
+              <p class="advantages-cotainer__text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="advantages-cotainer__item">
+              <div class="advantages-cotainer__image">
+                <svg class="advantages-cotainer__icon">
+                  <use href="./images/symbol-defs.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-cotainer__title">Современные технологии</h3>
+              <p class="advantages-cotainer__text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+       <!--Секция чем мы занимаемся-->
+      <section class="section no-padding">
+        <div class="ourworks-container">
+          <h2 class="ourworks-container__title">Чем мы занимаемся</h2>
+          <ul class="ourworks-container__list">
+            <li class="ourworks-container__item">
+              <div class="ourworks-container__image">
+                <img
+                  src="images/img1.jpg"
+                  alt="работа на клавиатуре"
+                  width="370"
+                />
+                <div class="ourworks-container__label">
+                  <p class="ourworks-container__text">десктопные приложения</p>
+                </div>
+              </div>
+            </li>
+            <li class="ourworks-container__item">
+              <div class="ourworks-container__image">
+                <img
+                  src="images/img2.jpg"
+                  alt="работа с телефоном"
+                  width="370"
+                />
+                <div class="ourworks-container__label">
+                  <p class="ourworks-container__text">мобильные приложения</p>
+                </div>
+              </div>
+            </li>
+            <li class="ourworks-container__item">
+              <div class="ourworks-container__image">
+                <img
+                  src="images/img3.jpg"
+                  alt="работа с диаграммой"
+                  width="370"
+                />
+                <div class="ourworks-container__label">
+                  <p class="ourworks-container__text">дизайнерские решения</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Секция наша команда-->
+      <section class="team-section">
+        <div class="container">
+          <h2 class="team-section__maintitle">Наша команда</h2>
+          <ul class="team-section__list">
+            <li class="team-section__item">
+              <img
+                src="images/dem.jpg"
+                alt="мужчина темная рубашка, очки, улыбается"
+                width="270"
+              />
+              <div class="team-section__team">
+                <h3 class="team-section__title">Игорь Демьяненко</h3>
+                <p class="team-section__text">Product Designer</p>
+                <ul class="team-section__sociallist">
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20px">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-section__item">
+              <img
+                src="images/rep.jpg"
+                alt="женщина темный жакет, очки, улыбается"
+                width="270"
+              />
+              <div class="team-section__team">
+                <h3 class="team-title">Ольга Репина</h3>
+                <p class="team-text">Frontend Developer</p>
+                <ul class="team-list">
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-icon" height="20">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-section__item">
+              <img
+                src="images/tar.jpg"
+                alt="мужчина светлая рубашка, без очков, улыбается"
+                width="270"
+              />
+              <div class="team-section__team">
+                <h3 class="team-title">Николай Тарасов</h3>
+                <p class="team-text">Marketing</p>
+                <ul class="team-list">
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team-section__item">
+              <img
+                src="images/erm.jpg"
+                alt="мужчина темная футболка, очки, улыбается"
+                width="270"
+              />
+              <div class="team-section__team">
+                <h3 class="team-title">Михаил Ермаков</h3>
+                <p class="team-text">UI Designer</p>
+                <ul class="team-list">
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="team-section__image">
+                      <svg class="team-section__icon" height="20">
+                        <use href="./images/symbol-defs.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+  </body>
+</html>
